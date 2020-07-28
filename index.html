@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHROME.PW</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        html {
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center bg-info">
+            <h3 class="text-center text-white">CHROME.PW</h3>
+        </div>
+        <div class="row bg-light">
+            <div class="p-3 container-fluid klg">
+                <h3 class="text-center">KLG</h3>
+                <div class="input-group p-3">
+                    <input class="form-control" placeholder="Ссылка" class="d-block" type="text" name="link" id="link">
+                    <input class="form-control" placeholder="Сезон" class="d-block" type="text" name="season"
+                        id="season">
+                    <input class="form-control" placeholder="Кол-во серий" class="d-block" type="text" name="series"
+                        id="series">
+                </div>
+                <div class="btns btn-group d-flex justify-content-center">
+                    <button id="generateBtn" type="button" class="btn btn-success">Сгенерировать</button>
+                    <button id="generateCls" type="button" class="btn btn-danger">Очистить</button>
+                </div>
+                <div id="result-wrapper" class="form-group invisible">
+                    <label for="output">Вывод</label>
+                    <textarea class="form-control" id="output" rows="10"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+<script src="libs/jquery-3.2.1.slim.min.js"></script>
+<script src="libs/popper.min.js"></script>
+<script src="libs/bootstrap.min.js"></script>
+<script src="/js/klg.js"></script>
+
+</html>
